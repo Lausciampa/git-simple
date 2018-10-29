@@ -14,7 +14,28 @@ img:hover, button:hover {
   transition: 1s;
 }
 
+a {
+  animation: wobbleup 1s ease-in-out infinite;
+}
+
+p, h1, h2, img {
+  animation: wobbleside 4s ease-in-out infinite;
+}
+
+
 
 body {
     background-color: black;
+}
+
+@keyframes wobbleup {
+  0% {transform: translate(0, 0);}
+  50% {transform: translate(0, -10px);}
+  100% {transform: translate(0,0);}
+}
+
+@keyframes wobbleside {
+  0% {transform: translate(-40px, 0);}
+  50% {transform: translate(40px, 0);}
+  100% {transform: translate(-40px, 0);}
 }
