@@ -19,6 +19,10 @@ a {
   animation: wobbleup 7s ease-in-out infinite;
 }
 
+.navbar a {
+  animation-name: none;
+}
+
 p, h1, h2, img {
   animation: wobbleside 10s ease-in-out infinite;
 }
