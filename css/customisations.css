@@ -79,3 +79,20 @@ header a, a:visited {
     text-decoration:none;
     color:#fcfcfc;
 }
+
+input[type='text'] {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+textarea.form-control {
+  height: 8em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+label {
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-family: Creepster, sans-serif;
+}
