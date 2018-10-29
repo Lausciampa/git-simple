@@ -1,1 +1,1 @@
-alert("Spooky!");
+console.log("Spooky!");
