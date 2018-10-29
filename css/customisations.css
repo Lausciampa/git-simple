@@ -1,3 +1,7 @@
+
+.myCarousel {
+	background-color: red;
+}
 /* put your page styling customisations here! */
 
 * {
@@ -8,4 +12,3 @@
 body {
     background-color: black;
 }
-
