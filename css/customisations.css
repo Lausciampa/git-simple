@@ -7,16 +7,25 @@
 * {
   font-family: 'Comic Sans', script;
   transition: 1s;
+  color: white;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Creepster';
 }
 
-
+.btn:hover {
+  background: red;
+  color: white;
+  transition: 1s;
+}
 
 a {
   animation: wobbleup 7s ease-in-out infinite;
+}
+
+.navbar  a {
+  animation-name: none;
 }
 
 p, h1, h2, img {
