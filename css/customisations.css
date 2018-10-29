@@ -80,6 +80,7 @@ header a, header a:visited {
     color:#fcfcfc;
 }
 
+
 .buttonStyle, .buttonStyle:visited, .button:hover{
 	background-color: green;
 	border-radius: 10%;
@@ -88,5 +89,23 @@ header a, header a:visited {
 	text-align: center;
 	background-image: linear-gradient(rgb(153, 99, 84), rgb(166, 226, 44));
 	margin-top: 1em;
+}
+
+
+input[type='text'] {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+textarea.form-control {
+  height: 8em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+label {
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-family: Creepster, sans-serif;
 }
 
