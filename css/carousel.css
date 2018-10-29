@@ -5,6 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #F6AA64;
 }
 
 
@@ -42,6 +43,7 @@ body {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -61,6 +63,9 @@ body {
   height: 500px;
 }
 
+#myCarousel{
+    background-image:url("https://images.unsplash.com/photo-1508995476428-43d70c3d0042?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dea6170aa7c3a6fd9763c41c14269432&auto=format&fit=crop&w=2468&q=80");
+}
 
 
 /* MARKETING CONTENT

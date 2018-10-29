@@ -1,11 +1,28 @@
+
+.myCarousel {
+	background-color: red;
+}
 /* put your page styling customisations here! */
+
+* {
+  font-family: 'Comic Sans', script;
+  transition: 1s;
+}
+
+*:hover {
+  transform: translate(0, 20px);
+  transition: 1s;
+}
+
 
 body {
     background-color: black;
 }
+
 
 .about-me-main {
     margin: 100px auto;
     width: 70%;
     text-align: center;
 }
+
