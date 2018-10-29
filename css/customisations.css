@@ -1,10 +1,14 @@
-<<<<<<< HEAD
+
 .myCarousel {
 	background-color: red;
-=======
+}
 /* put your page styling customisations here! */
+
+* {
+  font-family: 'Comic Sans', script;
+}
+
 
 body {
     background-color: black;
->>>>>>> 6d9c9329bdfacc4d94988ae3025e8135bc158d66
 }
