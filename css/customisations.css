@@ -21,11 +21,11 @@ h1, h2, h3, h4 {
 
 
 a {
-  animation: wobbleup 5s ease-in-out infinite;
+  animation: wobbleup 7s ease-in-out infinite;
 }
 
 p, h1, h2, img {
-  animation: wobbleside 7s ease-in-out infinite;
+  animation: wobbleside 10s ease-in-out infinite;
 }
 .no-animate {
   animation-name: none;
@@ -45,9 +45,9 @@ body {
 }
 
 @keyframes wobbleside {
-  0% {transform: translate(-40px, 0) rotate(1deg);}
-  50% {transform: translate(40px, 0) rotate(-.5deg);}
-  100% {transform: translate(-40px, 0) rotate(1deg);}
+  0% {transform: translate(-20px, 0) rotate(1deg);}
+  50% {transform: translate(20px, 0) rotate(-.5deg);}
+  100% {transform: translate(-20px, 0) rotate(1deg);}
 }
 
 * {
