@@ -29,13 +29,13 @@ body {
 }
 
 @keyframes wobbleup {
-  0% {transform: translate(0, 0);}
-  50% {transform: translate(0, -10px);}
-  100% {transform: translate(0,0);}
+  0% {transform: translate(0, 0) rotate(3deg);}
+  50% {transform: translate(0, -10px) rotate(-1deg);}
+  100% {transform: translate(0,0) rotate(3deg);}
 }
 
 @keyframes wobbleside {
-  0% {transform: translate(-40px, 0);}
-  50% {transform: translate(40px, 0);}
-  100% {transform: translate(-40px, 0);}
+  0% {transform: translate(-40px, 0) rotate(1deg);}
+  50% {transform: translate(40px, 0) rotate(-3deg);}
+  100% {transform: translate(-40px, 0) rotate(1deg);}
 }
