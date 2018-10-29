@@ -9,14 +9,45 @@
   transition: 1s;
 }
 
-*:hover {
+img:hover, button:hover {
   transform: translate(0, 20px);
   transition: 1s;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Creepster';
+}
+
+
+
+a {
+  animation: wobbleup 5s ease-in-out infinite;
+}
+
+p, h1, h2, img {
+  animation: wobbleside 7s ease-in-out infinite;
+}
+.no-animate {
+  animation-name: none;
+}
+
+
+
 
 body {
     background-color: black;
+}
+
+@keyframes wobbleup {
+  0% {transform: translate(0, 0) rotate(.5deg);}
+  50% {transform: translate(0, -10px) rotate(-1deg);}
+  100% {transform: translate(0,0) rotate(.5deg);}
+}
+
+@keyframes wobbleside {
+  0% {transform: translate(-40px, 0) rotate(1deg);}
+  50% {transform: translate(40px, 0) rotate(-.5deg);}
+  100% {transform: translate(-40px, 0) rotate(1deg);}
 }
 
 * {
@@ -89,18 +120,18 @@ header a, a:visited {
   right:0;
   bottom:0;
   width:100%;
-  height:100%;
+  height:3500px;
   display:block;
+  z-index: -3;
 }
 
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
 }
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:1;
+  z-index:-2;
 
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;
@@ -111,7 +142,7 @@ header a, a:visited {
 
 .clouds{
     background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-    z-index:3;
+    z-index:-1;
 
   -moz-animation:move-clouds-back 200s linear infinite;
   -ms-animation:move-clouds-back 200s linear infinite;
@@ -119,4 +150,4 @@ header a, a:visited {
   -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 200s linear infinite;
 }
->>>>>>> ca847bb6d0b6c75127d8973ba14bdfb2ead1ba49
+
