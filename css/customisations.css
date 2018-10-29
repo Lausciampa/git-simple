@@ -75,7 +75,18 @@ header h2{
     width: 80%;
     text-align: center;
 }
-header a, a:visited {
+header a, header a:visited {
     text-decoration:none;
     color:#fcfcfc;
 }
+
+.buttonStyle, .buttonStyle:visited, .button:hover{
+	background-color: green;
+	border-radius: 10%;
+	padding: 0.75em;
+	color: GreenYellow;
+	text-align: center;
+	background-image: linear-gradient(rgb(153, 99, 84), rgb(166, 226, 44));
+	margin-top: 1em;
+}
+
