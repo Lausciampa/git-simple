@@ -3,3 +3,9 @@
 body {
     background-color: black;
 }
+
+.about-me-main {
+    margin: 100px auto;
+    width: 70%;
+    text-align: center;
+}
