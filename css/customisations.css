@@ -39,6 +39,9 @@ p, h1, h2, img {
 .no-animate {
   animation-name: none;
 }
+.no-animate * {
+  animation-name: none;
+}
 
 body {
     background-color: black;
