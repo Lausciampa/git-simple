@@ -1,3 +1,6 @@
+body, a:hover {
+  cursor: url('../images/darren-cursor.png'), default;
+}
 
 .myCarousel {
 	background-color: red;
