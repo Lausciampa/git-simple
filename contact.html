@@ -89,7 +89,7 @@
 <div class="container">
     <div class="row">
 
-      <form>
+      <form action='' method='post'>
         <div class='col-xs-6'>
           <label for='name'>Name: *</label>
           <input type="text"class='form-control' name="name" id='name' required>
@@ -102,11 +102,14 @@
           <label for='Message'>Message:  (keep it spooky!)</label>
           <textarea class='form-control' id='name'></textarea>
         </div>
+        <div class='col-xs-12'>
+            <input class='form-control' type="submit" name="submit">
+        </div>
       </form>
     </div>
 
     <!-- /END THE FEATURETTES -->
-
+    <hr class="featurette-divider">
 
     <!-- FOOTER -->
     <footer class='no-animate'>
