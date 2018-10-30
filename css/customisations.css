@@ -39,6 +39,9 @@ p, h1, h2, img {
 .no-animate {
   animation-name: none;
 }
+.no-animate * {
+  animation-name: none;
+}
 
 body {
     background-color: black;
@@ -97,15 +100,25 @@ header a, header a:visited {
 }
 
 
-input[type='text'] {
+
+input[type='text'], textarea.form-control {
   margin-bottom: 2em;
   font-size: 1.5em;
+  font-family: Raleway, sans-serif;
 }
+
+
 
 textarea.form-control {
   height: 8em;
-  margin-bottom: 2em;
-  font-size: 1.5em;
+}
+
+input[type='submit'].form-control {
+  float: right;
+  width: 12rem;
+  font-family: Creepster, sans-serif;
+  font-size: 3rem;
+  height: auto;
 }
 
 label {
@@ -113,4 +126,40 @@ label {
   letter-spacing: 5px;
   font-family: Creepster, sans-serif;
 }
+
+.main-article{
+  position: relative;
+}
+
+.about-navigation{
+  text-align: center;
+  border: thick dashed white;
+  width: 40%;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+.about-navigation ul li{
+  list-style-type: none;
+  font-family: Creepster, sans-serif;
+}
+
+.about-container .jack-image{
+  width: 400px;
+}
+
+
+.about-container .jack-image{
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.about-container:hover .jack-image{
+  visibility: visible;
+  opacity: 10;
+}
+
 
