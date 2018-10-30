@@ -114,3 +114,38 @@ label {
   font-family: Creepster, sans-serif;
 }
 
+.main-article{
+  position: relative;
+}
+
+.about-navigation{
+  text-align: center;
+  border: thick dashed white;
+  width: 40%;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+.about-navigation ul li{
+  list-style-type: none;
+  font-family: Creepster, sans-serif;
+}
+
+.about-container .jack-image{
+  width: 400px;
+}
+ 
+
+.about-container .jack-image{
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.about-container:hover .jack-image{
+  visibility: visible;
+  opacity: 10;
+}
+
