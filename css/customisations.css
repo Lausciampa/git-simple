@@ -100,7 +100,7 @@ header a, header a:visited {
 }
 
 
-input[type='text'] {
+input[type='text'], input[type='email']{
   margin-bottom: 2em;
   font-size: 1.5em;
 }
@@ -152,4 +152,8 @@ label {
   opacity: 10;
 }
 
+#js-submit{
+float: none;
+margin : 0 auto;
+}
 
