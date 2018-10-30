@@ -24,10 +24,12 @@
 		<link href="css/customisations.css" rel="stylesheet">
 		<link href="css/about.css" rel="stylesheet">
 		<script src="js/holder.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Creepster" rel="stylesheet">
 	</head>
 <!-- NAVBAR
 ================================================== -->
 <body>
+	<div id="top">
 		<div class="navbar-wrapper">
 	<div class="container">
 		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -48,6 +50,7 @@
 	          <li><a href="./blog.html">Spooky Blog</a></li>
 	          <li class='active'><a href="./reviews.html">Reviews</a></li>
 	          <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./shop.html">Shop</a></li>
 	          <li class="dropdown">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <span class="caret"></span></a>
 	            <ul class="dropdown-menu" role="menu">
@@ -62,19 +65,65 @@
 		</div>
 	</div>
 </div>
+<div class="reviewContainer">
+	<h1 class="reviewheading">Our Brilliant Reviews</h1>
+	<article class="col-lg-4 article">
+		<h1>"AMAZING!"</h1>
+		<p>The day out for my family and I was unsurpassed. It was amazing! Five stars!</p>
+		<p class="reviewer"> - Pete, Lincoln</p>
+	</article>
+	<article class="col-lg-4 article">
+		<h1>"HORRIFIC"</h1>
+		<p>We won't be coming back. Three of my family members were killed in accidents while we aboard that accursed ship, and I thought the sandwiches were subpar. It was quite horrific, all in all.</p>
+		<p class="reviewer"> - Alison, Weston-Super-Mare</p>
+	</article>
+	<article class="col-lg-4 article">
+		<h1>"TEN OUT OF TEN!"</h1>
+		<p>We had really just the best time! It really was just incredible. Really, really good. Really, we've never had so much fun! Ten out of ten, yes really. </p>
+		<p class="reviewer"> - Sandra, Tower Hamlets</p>
+	</article>
+	<article class="col-lg-4 article">
+		<h1>"ADEQUATE!"</h1>
+		<p>Experience: adequate. Food: adequate. Drinks: adequate. Staff: adequate. The whole thing was adequate.</p>
+		<p class="reviewer"> - Nigel, Slough</p>
+	</article>
+	<article class="col-lg-4 article">
+		<h1>"WOW!"</h1>
+		<p>OMG WoWwwwwwWw!!! Like, this was just so increds!! We dranks like a million shots and my bezzie Nicole got pregnant!!!!!! Sooooooo much fun!!! </p>
+		<p class="reviewer"> - Jenny, Bristol</p>
+	</article>
+	<article class="col-lg-4 article">
+		<h1>"MEH!"</h1>
+		<p>We were promised spooky pirates. What we got was not very spooky, nor very piratey. Meh!</p>
+		<p class="reviewer"> - Andrew, Westbury-Upon-Trim</p>
+	</article>
+</div>
 
 
 
-
-
-
-
-
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+		// smooth scrolling to anchor
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	});
+	</script>
 </body>
 </html>

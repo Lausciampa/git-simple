@@ -30,11 +30,13 @@
 <!-- NAVBAR
 ================================================== -->
     <body id="body">
+        <div id="top">
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="clouds"></div>
         <div class="navbar-wrapper">
             <div class="container">
+
                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
@@ -53,6 +55,7 @@
                                 <li class='active'><a href="./blog.html">Spooky Blog</a></li>
                                 <li><a href="./reviews.html">Reviews</a></li>
                                 <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./shop.html">Shop</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
@@ -68,7 +71,6 @@
             </div>
         </div>
 
-
         <!-- Carousel
         ================================================== -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -79,17 +81,14 @@
                     <img class='no-animate' src="https://thewallpaper.co/wp-content/uploads/2017/10/peace-night-creepy-gravetombstone-scary-cemetery-spooky-landscapes-glow-darkhigh-quality-photos-halloween-background-trees-forest-woods-cartoon-wallpapers-768x480.jpg" alt="First slide">
 
                     <div class="container">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption blog">
                             <h1>The Curse</h1>
                             <p>The world is full of scary places, and sometimes these real life horror factories are frightening enough to have their own movie made about them. Places like the Amityville Horror house on Long Island, which played host to a family murder and supposed hauntings thereafter; or the Perron home, which had its own series of paranormal activity that inspired The Conjuring. But these mere haunted houses and their ilk pale in comparison to the frights in the new movie The Forest , which takes place at Aokigahara... better known as Japan's suicide forest.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="./signUp.html" role="button">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><!-- /.carousel -->
-
-
 
         <!-- Marketing messaging and featurettes
         ================================================== -->
@@ -108,7 +107,7 @@
 
         <!-- FOOTER -->
         <footer class='container no-animate'>>
-            <p class="pull-right no-animate"><a href="#">Back to top</a></p>
+            <p class="pull-right no-animate"><a href="#top">Back to top</a></p>
             <p class="no-animate">&copy; 2018 Spooky Pirates &middot; <a href="policy.html" class="no-animate">Privacy</a> &middot; <a href="./terms.html" class="no-animate">Terms</a></p>
         </footer>
 
@@ -118,5 +117,24 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function($){
+            // smooth scrolling to anchor
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        });
+        </script>
     </body>
 </html>
