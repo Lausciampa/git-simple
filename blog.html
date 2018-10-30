@@ -30,6 +30,7 @@
 <!-- NAVBAR
 ================================================== -->
     <body id="body">
+        <div id="top">
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="clouds"></div>
@@ -112,7 +113,7 @@
 
         <!-- FOOTER -->
         <footer class='container no-animate'>>
-            <p class="pull-right no-animate"><a href="#">Back to top</a></p>
+            <p class="pull-right no-animate"><a href="#top">Back to top</a></p>
             <p class="no-animate">&copy; 2018 Spooky Pirates &middot; <a href="policy.html" class="no-animate">Privacy</a> &middot; <a href="./terms.html" class="no-animate">Terms</a></p>
         </footer>
 
@@ -122,5 +123,24 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function($){
+            // smooth scrolling to anchor
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        });
+        </script>
     </body>
 </html>
