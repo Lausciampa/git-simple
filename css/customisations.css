@@ -88,7 +88,6 @@ header a, header a:visited {
     color:#fcfcfc;
 }
 
-<<<<<<< HEAD
 
 .buttonStyle, .buttonStyle:visited, .button:hover{
 	background-color: green;
@@ -101,10 +100,8 @@ header a, header a:visited {
 }
 
 
-input[type='text'] {
-=======
+
 input[type='text'], textarea.form-control {
->>>>>>> contact-form
   margin-bottom: 2em;
   font-size: 1.5em;
   font-family: Raleway, sans-serif;
@@ -150,7 +147,7 @@ label {
 .about-container .jack-image{
   width: 400px;
 }
- 
+
 
 .about-container .jack-image{
   background: rgba(0, 0, 0, 0.1);
