@@ -10,6 +10,11 @@
   color: white;
 }
 
+.container.marketing h1{
+	text-align: center;
+	margin-bottom: 2em;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Creepster';
 }
@@ -38,6 +43,9 @@ p, h1, h2, img {
   animation: wobbleside 10s ease-in-out infinite;
 }
 .no-animate {
+  animation-name: none;
+}
+.no-animate * {
   animation-name: none;
 }
 
@@ -98,15 +106,24 @@ header a, header a:visited {
 }
 
 
-input[type='text'] {
+input[type='text'], input[type='email']{
   margin-bottom: 2em;
   font-size: 1.5em;
+  font-family: Raleway, sans-serif;
 }
+
+
 
 textarea.form-control {
   height: 8em;
-  margin-bottom: 2em;
-  font-size: 1.5em;
+}
+
+input[type='submit'].form-control {
+  float: right;
+  width: 12rem;
+  font-family: Creepster, sans-serif;
+  font-size: 3rem;
+  height: auto;
 }
 
 label {
@@ -115,3 +132,63 @@ label {
   font-family: Creepster, sans-serif;
 }
 
+.main-article{
+  position: relative;
+}
+
+.about-navigation{
+  text-align: center;
+  border: thick dashed white;
+  width: 40%;
+  display: inline-block;
+  margin-left: 30%;
+}
+
+.about-navigation ul li{
+  list-style-type: none;
+  font-family: Creepster, sans-serif;
+}
+
+.about-container .jack-image{
+  width: 400px;
+}
+
+
+.about-container .jack-image{
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.about-container:hover .jack-image{
+  visibility: visible;
+  opacity: 10;
+}
+
+
+#js-submit{
+  float: none;
+  margin : 0 auto;
+}
+
+.reviewContainer {
+	padding: 5em;
+	margin-top: 3em;
+}
+
+.reviewer, .reviewheading {
+	color: red;
+}
+
+.reviewContainer h1{
+	text-align: center;
+	margin-bottom: 2em;
+	font-family: Creepster, sans-serif;
+
+}
+
+.article {
+	margin-bottom: 5em;
+}

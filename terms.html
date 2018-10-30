@@ -30,6 +30,7 @@
 <!-- NAVBAR
 ================================================== -->
     <body id="body">
+        <div id="top">
         <div class="navbar-wrapper">
     <div class="container">
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -49,7 +50,9 @@
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./blog.html">Spooky Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
+
                         <li><a href="./shop.html">Shop</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -70,7 +73,7 @@
     <!-- Indicators -->
             <div class="item active no-animate">
 
-            <img class='no-animate' src="https://thewallpaper.co/wp-content/uploads/2017/10/peacehigh-resolution-fighting-medieval-dark-chronicles-creepy-halloween-rpg-spooky-action-arcc-hearts-widescreen-fantasy-viewarcane-mmo-high-resolution.jpg" alt="First slide"> 
+            <img class='no-animate' src="https://thewallpaper.co/wp-content/uploads/2017/10/peacehigh-resolution-fighting-medieval-dark-chronicles-creepy-halloween-rpg-spooky-action-arcc-hearts-widescreen-fantasy-viewarcane-mmo-high-resolution.jpg" alt="First slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -121,7 +124,7 @@
 
     <!-- FOOTER -->
     <footer class='no-animate'>>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
         <p>&copy; 2018 Spooky Pirates &middot; <a href="./policy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a></p>
     </footer>
 
@@ -132,5 +135,24 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function($){
+            // smooth scrolling to anchor
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        });
+        </script>
     </body>
 </html>
