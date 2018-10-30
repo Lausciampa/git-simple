@@ -52,6 +52,11 @@ body {
   top: 15rem;
 }
 
+.carousel-caption.blog {
+  position: static;
+  transform: translate(0, 10rem);
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
