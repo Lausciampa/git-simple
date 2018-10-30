@@ -162,4 +162,21 @@ label {
   opacity: 10;
 }
 
+.reviewContainer {
+	padding: 5em;
+	margin-top: 3em;
+}
 
+.reviewer, .reviewheading {
+	color: red;
+}
+
+.reviewContainer h1{
+	text-align: center;
+	margin-bottom: 2em;
+	font-family: Creepster, sans-serif;
+}
+
+.article {
+	margin-bottom: 5em;
+}
