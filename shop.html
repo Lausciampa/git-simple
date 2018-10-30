@@ -30,7 +30,9 @@
 <!-- NAVBAR
 ================================================== -->
     <body id="body">
-        <div id="top">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
         <div class="navbar-wrapper">
     <div class="container">
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -46,19 +48,17 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./blog.html">Spooky Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
-
-                        <li><a href="./shop.html">Shop</a></li>
-
-
+                        <li><a href="./reviews.html">Reviews</a></li>
+                        <li class="active"><a href="./shop.html">Shop</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Pirate Phrases</a>Pirate Phrases</li>
-                                <li><a href="#">Treasure Maps</a>Treasure Maps</li>
+                                <li><a href="treasuremap.html">Treasure Maps</a>Treasure Maps</li>
                                 <li><a href="#">Spooky Tales</a>Spooky Tales</li>
                             </ul>
                         </li>
@@ -70,26 +70,21 @@
 </div>
 <!-- Carousel
 ================================================== -->
-<div class="carousel" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-            <div class="item active no-animate">
+    <div class="carousel-inner">
+        <div class="item active">
 
-            <img class='no-animate' src="https://thewallpaper.co/wp-content/uploads/2017/10/peacehigh-resolution-fighting-medieval-dark-chronicles-creepy-halloween-rpg-spooky-action-arcc-hearts-widescreen-fantasy-viewarcane-mmo-high-resolution.jpg" alt="First slide">
+            <img class='no-animate' src="https://images.pexels.com/photos/331990/pexels-photo-331990.jpeg?cs=srgb&dl=architecture-buildings-business-331990.jpg&fm=jpg" alt="First slide">
 
             <div class="container">
                 <div class="carousel-caption">
-
-                    <h1>POLICY</h1>
-                    <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                    <h1>Welcome to the Golden Dubloon gift shop!</h1>
+                    <p>Fill yer boots with the finest spooky pirate booty - but don't forget, all sales are final and no refunds will be offered under any circumstances.</p>
                 </div>
             </div>
         </div>
+    </div>
 
 </div><!-- /.carousel -->
 
@@ -98,38 +93,22 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-<div class="container">
-    <div class="row">
-    <h2>Collection of personal data</h2>
-    <p>We save your form datas for your better experience. These datas may include your name, your e-mail address and personal informations. If you don’t want share these information with us, we understand this but we are not give you a warranty to using some features of thewallpaper.co.</p>
+
+    <hr class="featurette-divider">
+    
+    <div class="container container-shop">
+        <h1>OUT OF STOCK - COME BACK SOON!</h1>
     </div>
-    <div class="row">
-    <h2>Collection of non-personal information</h2>
-    <p>When you visit thewallpaper.co, our servers automatically record some data from your browser sends. This informations might have your IP address, browser type and version, your operation system, how much time you spent on thewallpaper.co.</p>
-</div>
-    <div class="row">
-    <h2>Managing personal information</h2>
-    <p>If required, we may request your personan informations. Thewallpaper.co and its serviced may change in the future. You can see allchanges from our website. With all of these, we kept some personal informations even you delete your account. We record this because of we perform one’s legal obligations.</p>
-</div>
-   <div class = "row">
-    <p></p>
-    </div>
-</div>
-
-
-
-
-
-
 
 
     <!-- /END THE FEATURETTES -->
 
 
     <!-- FOOTER -->
-    <footer class='no-animate'>>
-        <p class="pull-right"><a href="#top">Back to top</a></p>
-        <p>&copy; 2018 Spooky Pirates &middot; <a href="./policy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a></p>
+
+    <footer class='no-animate'>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 Spooky Pirates &middot; <a href="policy.html">Privacy</a> &middot; <a href="./terms.html">Terms</a></p>
     </footer>
 
 </div><!-- /.container -->
@@ -139,24 +118,5 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-        jQuery(document).ready(function($){
-            // smooth scrolling to anchor
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-        });
-        </script>
     </body>
 </html>
