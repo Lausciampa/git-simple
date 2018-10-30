@@ -50,9 +50,17 @@
                     <ul class="nav navbar-nav">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li class="active"><a href="./blog.html">Spooky Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="./reviews.html">Reviews</a></li>
+                        <li><a href="./blog.html">Spooky Blog</a></li>
+                        <li class="active"><a href="./contact.html">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Pirate Phrases</a>Pirate Phrases</li>
+                                <li><a href="#">Treasure Maps</a>Treasure Maps</li>
+                                <li><a href="#">Spooky Tales</a>Spooky Tales</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -82,7 +90,7 @@
 <div class="container">
     <div class="row">
 
-      <form>
+      <form action='' method='post'>
         <div class='col-xs-6'>
           <label for='name'>Name: *</label>
           <input type="text"class='form-control' name="name" id='name' required>
@@ -95,11 +103,14 @@
           <label for='Message'>Message:  (keep it spooky!)</label>
           <textarea class='form-control' id='name'></textarea>
         </div>
+        <div class='col-xs-12'>
+            <input class='form-control' type="submit" name="submit">
+        </div>
       </form>
     </div>
 
     <!-- /END THE FEATURETTES -->
-
+    <hr class="featurette-divider">
 
     <!-- FOOTER -->
     <footer class='no-animate'>

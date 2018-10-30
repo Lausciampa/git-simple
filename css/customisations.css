@@ -85,6 +85,7 @@ header a, header a:visited {
     color:#fcfcfc;
 }
 
+<<<<<<< HEAD
 
 .buttonStyle, .buttonStyle:visited, .button:hover{
 	background-color: green;
@@ -98,14 +99,26 @@ header a, header a:visited {
 
 
 input[type='text'] {
+=======
+input[type='text'], textarea.form-control {
+>>>>>>> contact-form
   margin-bottom: 2em;
   font-size: 1.5em;
+  font-family: Raleway, sans-serif;
 }
+
+
 
 textarea.form-control {
   height: 8em;
-  margin-bottom: 2em;
-  font-size: 1.5em;
+}
+
+input[type='submit'].form-control {
+  float: right;
+  width: 12rem;
+  font-family: Creepster, sans-serif;
+  font-size: 3rem;
+  height: auto;
 }
 
 label {
