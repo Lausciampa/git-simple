@@ -241,6 +241,11 @@ th {
   .navbar {
     display: none;
   }
+
+  .navbar li {
+    font-family: "Oswald";
+  }
+  
   .table td,
   .table th {
     background-color: #fff !important;
