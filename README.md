@@ -1,4 +1,6 @@
 # Develop Me Simple Git Exercise
+Changing the readme file here. <<<<<<<<<<<<<<<
+
 
 This repository has been set up for the Git Workshop attendees to have a go working on and committing work to a Git repository.
 
